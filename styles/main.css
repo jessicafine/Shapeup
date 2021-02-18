@@ -1,20 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+}
 body {
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 100%
-
+    font-size: 100%;
+    width: 100%;
+    max-width: 850;
+    margin: 0 auto;
+    border: 5px solid steelblue;
+    box-shadow: 5px 5px 8px gray;
 }
 h1 {
-  font-size: 300%;
+  font-size: 300%; 
+  margin-left: 15px;
 }
-
+header { 
+      border-bottom: 5px solid steelblue;
+      background-image: linear-gradient (white, steelblue);
+}
 header h2 {
     font-size: 250%;
     color: steelblue; 
     font-style: italic;
-    text-shadow: 2px 2px 15px hotpink;
+    text-shadow: 2px 2px 15px gray;
+    margin-top: 15px;
 }
 header h3 {
   font-size: 150%;
+  margin-top: 10px;
+  margin-bottom: 15px;
 }
 header img {
   float: left;
@@ -24,46 +39,63 @@ header img {
 }
 Section h2, section h3, aside h2 {
     font-size: 150%;
+    margin: 15px;
+}
+section p {
+  margin: 15px;
+}
+section blockquote {
+  margin-left: 50px;
+  margin-right: 50px;
+  font-size: 90%;
+  color: navy;
+  border-left: 3px solid maroon;
+  padding: 5px;
+  background-color: khaki;
 }
 /* Link colors section */
 /* unvisited link */
 section a:link {
   color: maroon;
 }
-  
   /* visited link */
 section a:visited {
     color: maroon;
   }
-  
   /* mouse over link */
 section a:hover {
     color: steelblue;
-  }
-  
+}
   /* selected link */
 section a:active {
     color: steelblue;
-  }
+}
 /* link colors for aside */
 /* mouse over link */
 section a:hover {
-  color: maroon ;
+  color: maroon;
 }
 
 /* selected link */
 section a:active {
   color: maroon;
 }
-
 aside a {
     font-weight:bold;
+    margin: 15px;
+}
+aside h2 {
+  margin: 15px;
 }
 li {
   margin-top: 5px;
 }
-
-footer p {
+footer {
+  background-color: steelblue;
   font-size: 75%;
   text-align: center;
+  color: white;
+  padding: 25px;
+  font-weight: bold;
+  font-variant: small-caps;
 }
