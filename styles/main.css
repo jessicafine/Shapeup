@@ -80,6 +80,7 @@ main {
 /* Vertical Navigation List */
 #nav_list ul {
   list-style: none;
+  margin-left: 20px;
 }
 #nav_list ul li {
   border: 2px solid black;
@@ -126,10 +127,6 @@ section h3 {
 }
 section p {
   margin-left: 20px;
-}
-section aside, ul, h2, li {
-margin-left: 50px;
-padding-bottom: 5px;
 }
 /* Link colors section */
 /* unvisited link */
