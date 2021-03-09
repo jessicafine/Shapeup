@@ -24,7 +24,7 @@ body {
 }
 h1 {
   font-size: 250%; 
-  margin-left: 15px;
+  margin-left: 1em;
   margin-top: 15px;
 }
 header { 
@@ -46,14 +46,38 @@ header h3 {
 }
 header img {
   float: left;
-  margin-left: 10px;
-  margin-right: 20px;
+  margin-left: .5em;
+  margin-right: 1.5em;
 }
 main {
   clear: both;
 }
-
-/* Horizontal Menu Bar Style */
+/* Horizontal Menu Bar - W3 Float and block style */
+#nav_menu ul  {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color:steelblue;
+}
+#nav_menu ul li {
+  float: left;
+}
+#nav_menu #about {
+  float: right;
+}
+#nav_menu ul li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 1.5em;
+  text-decoration: none;
+}
+#nav_menu ul li a:hover {
+  background-color: lightsteelblue;
+  color: black;
+}
+/* Horizontal Menu Bar Style - Inline NavBar Style 
 #nav_menu ul {
   list-style: none;
   text-align: center;
@@ -77,6 +101,7 @@ main {
 #nav_menu ul li a:hover {
   color: red;
 }
+*/
 /* Vertical Navigation List */
 #nav_list ul {
   list-style: none;
@@ -100,10 +125,10 @@ main {
 }
 section h2, section h3, aside h2 {
     font-size: 150%;
-    margin: 15px;
+    margin: .5em;
 }
 section p {
-  margin: 15px;
+  margin: .5em;
 }
 section blockquote {
   margin-left: 50px;
@@ -125,8 +150,11 @@ section h3 {
   margin-right: 10px;
   padding-left: 10px;
 }
+aside ul {
+  margin-left: 2em;
+}
 section p {
-  margin-left: 20px;
+  margin-left: 1em;
 }
 /* Link colors section */
 /* unvisited link */
@@ -178,8 +206,9 @@ aside a:visited {
   font-size: 180%;
   color: maroon;
 }
-li {
+.sidebar li {
   margin-top: 5px;
+  margin-left: .5em;
 }
 footer {
   background-color: steelblue;
@@ -193,4 +222,23 @@ footer p {
   padding: 25px;
   font-weight: bold;
   font-variant: small-caps;
+}
+#mobilemenu {
+  display: none;
+}
+
+@media only screen and (max-width: 600px) {
+  .homesection {
+    float: none;
+    width: 100%;
+  }
+  .sidebar {
+    width: 100%;
+  }
+
+}
+@media only screen and (max-width: 400px) {
+
+
+
 }
