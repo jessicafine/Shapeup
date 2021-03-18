@@ -17,7 +17,7 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 100%;
     width: 100%;
-    max-width: 960px;
+    max-width: 1200px;
     margin: 0 auto;
     border: 5px solid steelblue;
     box-shadow: 5px 5px 8px gray;
@@ -195,12 +195,19 @@ aside a:visited {
   color: maroon;
  }
 .homesection {
-  width: 65%;
-  float: right;
+  width: 50%;
+  float: left;
 }
 .sidebar {
-  width: 33%;
+  width: 25%;
   padding-top: 20px;
+}
+#firstcol {
+  float: left;
+}
+#thirdcol {
+  float: right;
+  padding-right: .5em;
 }
 .sidebar h2 {
   font-size: 180%;
@@ -222,19 +229,35 @@ footer p {
   padding: 25px;
   font-weight: bold;
   font-variant: small-caps;
+  margin-bottom: 0;
 }
 
 #mobilemenu {
   display: none;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width:900px) {
+
+  html {
+    background-image: none;
+  }
+  body {
+    box-shadow: none;
+    border: none;
+    font-size: 90%;
+  }
+
+}
+
+@media only screen and (max-width: 767px) {
+  
   .homesection {
     float: none;
     width: 100%;
   }
   .sidebar {
     width: 100%;
+    float: none;
   }
   #nav_menu {
     display: none;
@@ -243,12 +266,22 @@ footer p {
     display: block;
   }
   .slicknav_menu {
+    display: block;
+  }
+  .slicknav_menu {
     background-color: steelblue !important;
   }
   
 }
-@media only screen and (max-width: 400px) {
-
+@media only screen and (max-width: 479px) {
+  header img {
+    float: none;
+    display: block;
+    margin: auto;
+  }
+  header h2, header h3 {
+    text-align: center;
+  }
 
 
 }
